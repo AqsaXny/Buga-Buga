@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=4 uid="uid://scsufai6jkva"]
+[gd_scene load_steps=62 format=4 uid="uid://scsufai6jkva"]
 
 [ext_resource type="Texture2D" uid="uid://dkjos2str42m8" path="res://Assets/oak_woods_v1.0/background/background_layer_1.png" id="1_682jx"]
 [ext_resource type="Script" uid="uid://crtljiau0xu6o" path="res://script/player.gd" id="1_oiv5u"]
@@ -36,10 +36,11 @@
 [ext_resource type="Texture2D" uid="uid://cd8s1np3qch2d" path="res://Assets/character/player/run/Jafar Walk1(hijau).png" id="33_q0je5"]
 [ext_resource type="Texture2D" uid="uid://b0uir3el7duhp" path="res://Assets/character/player/run/Jafar Walk2(hijau).png" id="34_ievjq"]
 [ext_resource type="Texture2D" uid="uid://mk738ex7bpwv" path="res://Assets/character/player/run/Jafar Walk3(hijau).png" id="35_qwfcr"]
-[ext_resource type="Texture2D" uid="uid://y47qfiauhxm5" path="res://Assets/collection/Topeng/blue mask (1).png" id="38_0p4x5"]
-[ext_resource type="Texture2D" uid="uid://bxc2sh2n88oks" path="res://Assets/collection/Topeng/blue mask (2).png" id="39_lrwxb"]
-[ext_resource type="Texture2D" uid="uid://cpg4jnw6ar4wa" path="res://Assets/collection/Topeng/blue mask (3).png" id="40_q7exo"]
-[ext_resource type="Texture2D" uid="uid://dmdiqurst0yo0" path="res://Assets/collection/Topeng/blue mask (4).png" id="41_b6vo3"]
+[ext_resource type="PackedScene" uid="uid://bj1rfg212fdym" path="res://scene/PintuKeluar.tscn" id="36_lrwxb"]
+[ext_resource type="Texture2D" uid="uid://b7iv1e2l6dyym" path="res://Assets/collection/Topeng/green mask (1).png" id="39_lrwxb"]
+[ext_resource type="Texture2D" uid="uid://bgrbh61gjbyds" path="res://Assets/collection/Topeng/green mask (2).png" id="40_q7exo"]
+[ext_resource type="Texture2D" uid="uid://8ibtvilp55u2" path="res://Assets/collection/Topeng/green mask (3).png" id="41_b6vo3"]
+[ext_resource type="Texture2D" uid="uid://chx3nep8wfxuw" path="res://Assets/collection/Topeng/green mask (4).png" id="42_g4rma"]
 [ext_resource type="Texture2D" uid="uid://cwkgppfqm3ftn" path="res://Assets/tileset/world_tileset.png" id="44_3hjfv"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_6iqov"]
@@ -1478,12 +1479,6 @@ animations = [{
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("38_0p4x5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("38_0p4x5")
-}, {
-"duration": 1.0,
 "texture": ExtResource("39_lrwxb")
 }, {
 "duration": 1.0,
@@ -1500,9 +1495,15 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("41_b6vo3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_g4rma")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_g4rma")
 }],
 "loop": true,
-"name": &"MaskBlue",
+"name": &"MaskHijau",
 "speed": 10.0
 }]
 
@@ -1610,6 +1611,11 @@ position_smoothing_speed = 2.0
 
 [node name="MatiAnim" type="Marker2D" parent="TileMap/TileMapLayer/Player"]
 
+[node name="PintuKeluar" parent="TileMap" instance=ExtResource("36_lrwxb")]
+position = Vector2(721, 258.99997)
+scale = Vector2(3.22, 3.22)
+target_scene_path = "uid://txq8gsejno3y"
+
 [node name="Area2D" type="Area2D" parent="." groups=["Player"]]
 texture_filter = 1
 position = Vector2(-45, -1)
@@ -1648,27 +1654,26 @@ sprite_frames = SubResource("SpriteFrames_snqhv")
 animation = &"Coin"
 autoplay = "Coin"
 
-[node name="Area2D3" type="Area2D" parent="." groups=["Player"]]
+[node name="Mask" type="Area2D" parent="." groups=["Player"]]
 texture_filter = 1
 position = Vector2(225, 27)
 script = ExtResource("17_rpr2f")
 
-[node name="Sprite2D" type="Sprite2D" parent="Area2D3"]
+[node name="Sprite2D" type="Sprite2D" parent="Mask"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mask"]
 position = Vector2(318.9, 297.9)
 shape = SubResource("CircleShape2D_p7hv2")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D3"]
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Mask"]
 texture_filter = 1
-position = Vector2(318.9, 296.9)
+position = Vector2(319.99997, 300)
 scale = Vector2(0.11, 0.11)
 sprite_frames = SubResource("SpriteFrames_g4rma")
-animation = &"MaskBlue"
-autoplay = "MaskBlue"
-frame = 6
-frame_progress = 0.6973569
+animation = &"MaskHijau"
+autoplay = "MaskHijau"
+frame_progress = 0.12263758
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
-[connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_body_entered"]
+[connection signal="body_entered" from="Mask" to="Mask" method="_on_body_entered"]

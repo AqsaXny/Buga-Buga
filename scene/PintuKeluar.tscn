@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bj1rfg212fdym"]
+
+[ext_resource type="Script" uid="uid://cckagbcgoy8sn" path="res://script/pintu.gd" id="1_k172s"]
+[ext_resource type="Texture2D" uid="uid://dldw50n1ill71" path="res://Assets/oak_woods_v1.0/decorations/shop.png" id="2_1srb4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k172s"]
+
+[node name="PintuKeluar" type="Area2D"]
+script = ExtResource("1_k172s")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("2_1srb4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.37, 0.37)
+shape = SubResource("RectangleShape2D_k172s")

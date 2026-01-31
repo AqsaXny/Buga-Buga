@@ -1,7 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://jmknipkcpixf"]
+[gd_scene load_steps=11 format=3 uid="uid://jmknipkcpixf"]
 
 [ext_resource type="Texture2D" uid="uid://bioqs1wb2vc0e" path="res://Assets/Background/previewpng.png" id="1_3er1b"]
-[ext_resource type="Script" uid="uid://cneaayu0x2w38" path="res://scene/main_menu.gd" id="1_hxu56"]
+[ext_resource type="Script" uid="uid://brl7w1wlgh4vw" path="res://script/main_menu.gd" id="1_hxu56"]
+[ext_resource type="FontFile" uid="uid://cdf57l005r27j" path="res://Assets/font/PressStart2P-Regular.ttf" id="3_0iwki"]
+[ext_resource type="Texture2D" uid="uid://c4pnbgogrm4re" path="res://Assets/Background/AllMask.png" id="3_2fwvj"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hxu56"]
 texture = ExtResource("1_3er1b")
@@ -42,6 +44,11 @@ shadow_offset = Vector2(0, 3.41)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3er1b"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_sepwh"]
+line_spacing = 3.1
+font = ExtResource("3_0iwki")
+font_size = 41
+
 [node name="MainMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -52,6 +59,7 @@ grow_vertical = 2
 script = ExtResource("1_hxu56")
 
 [node name="Panel" type="Panel" parent="."]
+texture_filter = 1
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -68,9 +76,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -181.0
-offset_top = -54.0
+offset_top = 9.0
 offset_right = 213.5
-offset_bottom = 129.0
+offset_bottom = 192.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 8
@@ -110,16 +118,22 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -230.0
-offset_top = -274.0
-offset_right = 266.0
-offset_bottom = -99.0
+offset_left = -241.0
+offset_top = -158.0
+offset_right = 292.0
+offset_bottom = 17.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 62
 text = "BUGA BUGA 
 THE ADVENTURE"
+label_settings = SubResource("LabelSettings_sepwh")
 horizontal_alignment = 1
+
+[node name="AllMask" type="Sprite2D" parent="."]
+position = Vector2(585.00006, 103)
+scale = Vector2(0.54, 0.54)
+texture = ExtResource("3_2fwvj")
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_exit_pressed"]

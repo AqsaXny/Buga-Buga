@@ -1,7 +1,8 @@
-[gd_scene load_steps=54 format=4 uid="uid://txq8gsejno3y"]
+[gd_scene load_steps=66 format=4 uid="uid://txq8gsejno3y"]
 
 [ext_resource type="Texture2D" uid="uid://dkjos2str42m8" path="res://Assets/oak_woods_v1.0/background/background_layer_1.png" id="1_682jx"]
 [ext_resource type="Script" uid="uid://crtljiau0xu6o" path="res://script/player.gd" id="1_oiv5u"]
+[ext_resource type="PackedScene" uid="uid://bj1rfg212fdym" path="res://scene/PintuKeluar.tscn" id="1_uq2d8"]
 [ext_resource type="Texture2D" uid="uid://bbdjs360lhths" path="res://Assets/oak_woods_v1.0/background/background_layer_2.png" id="2_s5if4"]
 [ext_resource type="Texture2D" uid="uid://cbccmto0vqqeo" path="res://Assets/oak_woods_v1.0/background/background_layer_3.png" id="3_e2s57"]
 [ext_resource type="Script" uid="uid://bjfynvngudiwq" path="res://script/killzone.gd" id="4_n4dc6"]
@@ -36,7 +37,15 @@
 [ext_resource type="Texture2D" uid="uid://cd8s1np3qch2d" path="res://Assets/character/player/run/Jafar Walk1(hijau).png" id="33_doif2"]
 [ext_resource type="Texture2D" uid="uid://b0uir3el7duhp" path="res://Assets/character/player/run/Jafar Walk2(hijau).png" id="34_4fwx0"]
 [ext_resource type="Texture2D" uid="uid://mk738ex7bpwv" path="res://Assets/character/player/run/Jafar Walk3(hijau).png" id="35_kduq0"]
+[ext_resource type="Texture2D" uid="uid://k5scyxpxpwi2" path="res://Assets/collection/Topeng/red mask (1).png" id="38_c8c68"]
+[ext_resource type="Texture2D" uid="uid://dybptbn1kq33l" path="res://Assets/collection/Topeng/red mask (2).png" id="39_yuut1"]
+[ext_resource type="Texture2D" uid="uid://b11y8j3mrje3f" path="res://Assets/collection/Topeng/red mask (3).png" id="40_u1kxi"]
+[ext_resource type="Texture2D" uid="uid://bkge4v2wx1v5r" path="res://Assets/collection/Topeng/red mask (4).png" id="41_pt8co"]
+[ext_resource type="Texture2D" uid="uid://y47qfiauhxm5" path="res://Assets/collection/Topeng/blue mask (1).png" id="42_jr41e"]
+[ext_resource type="Texture2D" uid="uid://bxc2sh2n88oks" path="res://Assets/collection/Topeng/blue mask (2).png" id="43_uq2d8"]
 [ext_resource type="Texture2D" uid="uid://cwkgppfqm3ftn" path="res://Assets/tileset/world_tileset.png" id="44_3hjfv"]
+[ext_resource type="Texture2D" uid="uid://cpg4jnw6ar4wa" path="res://Assets/collection/Topeng/blue mask (3).png" id="44_r84qu"]
+[ext_resource type="Texture2D" uid="uid://dmdiqurst0yo0" path="res://Assets/collection/Topeng/blue mask (4).png" id="45_2dsw2"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_qll7j"]
 
@@ -618,10 +627,6 @@ height = 5.0999985
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ilkk4"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_i72vd"]
-atlas = ExtResource("18_tisnv")
-region = Rect2(0, 0, 10, 10)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_bnxpl"]
 atlas = ExtResource("18_tisnv")
 region = Rect2(10, 0, 10, 10)
@@ -638,9 +643,6 @@ region = Rect2(30, 0, 10, 10)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_i72vd")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_bnxpl")
 }, {
 "duration": 1.0,
@@ -654,7 +656,81 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_jr41e"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uq2d8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_c8c68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_c8c68")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_yuut1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_yuut1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_u1kxi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_u1kxi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_pt8co")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_pt8co")
+}],
+"loop": true,
+"name": &"MaskHijau",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_0irho"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k4xom"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42_jr41e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_jr41e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_uq2d8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_uq2d8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_r84qu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_r84qu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_2dsw2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_2dsw2")
+}],
+"loop": true,
+"name": &"MaskHijau",
+"speed": 10.0
+}]
+
 [node name="Stage 1" type="Node2D"]
+
+[node name="PintuKeluar" parent="." instance=ExtResource("1_uq2d8")]
+position = Vector2(1364, 229)
+rotation = -3.1415927
+scale = Vector2(3.22, 3.22)
+target_scene_path = "uid://jmknipkcpixf"
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -771,26 +847,6 @@ autoplay = "Coin"
 frame = 2
 frame_progress = 0.447162
 
-[node name="Area2D2" type="Area2D" parent="." groups=["Player"]]
-position = Vector2(-50, 8)
-script = ExtResource("17_rpr2f")
-
-[node name="Sprite2D" type="Sprite2D" parent="Area2D2"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
-position = Vector2(318.9, 297.9)
-shape = SubResource("CircleShape2D_ilkk4")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D2"]
-texture_filter = 1
-position = Vector2(318.9, 296.9)
-scale = Vector2(2.18, 2.18)
-sprite_frames = SubResource("SpriteFrames_vxhgx")
-animation = &"Coin"
-autoplay = "Coin"
-frame = 2
-frame_progress = 0.447162
-
 [node name="Area2D3" type="Area2D" parent="." groups=["Player"]]
 position = Vector2(-293, 115)
 script = ExtResource("17_rpr2f")
@@ -831,28 +887,8 @@ autoplay = "Coin"
 frame = 2
 frame_progress = 0.447162
 
-[node name="Area2D6" type="Area2D" parent="." groups=["Player"]]
-position = Vector2(642, 58)
-script = ExtResource("17_rpr2f")
-
-[node name="Sprite2D" type="Sprite2D" parent="Area2D6"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D6"]
-position = Vector2(318.9, 297.9)
-shape = SubResource("CircleShape2D_ilkk4")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Area2D6"]
-texture_filter = 1
-position = Vector2(318.9, 296.9)
-scale = Vector2(2.18, 2.18)
-sprite_frames = SubResource("SpriteFrames_vxhgx")
-animation = &"Coin"
-autoplay = "Coin"
-frame = 2
-frame_progress = 0.447162
-
 [node name="Area2D7" type="Area2D" parent="." groups=["Player"]]
-position = Vector2(1049, -69)
+position = Vector2(977, 24)
 script = ExtResource("17_rpr2f")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D7"]
@@ -871,10 +907,51 @@ autoplay = "Coin"
 frame = 2
 frame_progress = 0.447162
 
+[node name="MaskMerah" type="Area2D" parent="." groups=["Player"]]
+texture_filter = 1
+position = Vector2(-47, 21)
+script = ExtResource("17_rpr2f")
+
+[node name="Sprite2D" type="Sprite2D" parent="MaskMerah"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MaskMerah"]
+position = Vector2(318.9, 297.9)
+shape = SubResource("CircleShape2D_jr41e")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="MaskMerah"]
+texture_filter = 1
+position = Vector2(319.99997, 300)
+scale = Vector2(0.11, 0.11)
+sprite_frames = SubResource("SpriteFrames_uq2d8")
+animation = &"MaskHijau"
+autoplay = "MaskHijau"
+frame_progress = 0.18978633
+
+[node name="MaskBiru" type="Area2D" parent="." groups=["Player"]]
+texture_filter = 1
+position = Vector2(965, 345)
+script = ExtResource("17_rpr2f")
+
+[node name="Sprite2D" type="Sprite2D" parent="MaskBiru"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MaskBiru"]
+position = Vector2(-1.019989, -0.020019531)
+shape = SubResource("CircleShape2D_0irho")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="MaskBiru"]
+texture_filter = 1
+position = Vector2(0.07998657, 2.0799866)
+scale = Vector2(0.11, 0.11)
+sprite_frames = SubResource("SpriteFrames_k4xom")
+animation = &"MaskHijau"
+autoplay = "MaskHijau"
+frame = 5
+frame_progress = 0.019911196
+
 [connection signal="body_entered" from="KillZoneStaticBody2D" to="KillZoneStaticBody2D" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
-[connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D5" to="Area2D5" method="_on_body_entered"]
-[connection signal="body_entered" from="Area2D6" to="Area2D6" method="_on_body_entered"]
 [connection signal="body_entered" from="Area2D7" to="Area2D7" method="_on_body_entered"]
+[connection signal="body_entered" from="MaskMerah" to="MaskMerah" method="_on_body_entered"]
+[connection signal="body_entered" from="MaskBiru" to="MaskBiru" method="_on_body_entered"]
