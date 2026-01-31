@@ -1,0 +1,382 @@
+[gd_scene load_steps=93 format=3 uid="uid://cvr38vvenl8de"]
+
+[ext_resource type="Script" uid="uid://gxu4rucmgp27" path="res://script/hantu.gd" id="1_88l64"]
+[ext_resource type="Texture2D" uid="uid://d2pmsf8gwxfrg" path="res://Assets/hantu/Jafar Hantuu-1.png - Copy (2).png" id="2_a7gh5"]
+[ext_resource type="Texture2D" uid="uid://cuuwkxx4x5e4n" path="res://Assets/hantu/Jafar Hantuu-1.png - Copy (3).png" id="3_a5e21"]
+[ext_resource type="Texture2D" uid="uid://b85yor6r0612r" path="res://Assets/hantu/Jafar Hantuu-1.png - Copy (4).png" id="4_m48on"]
+[ext_resource type="Texture2D" uid="uid://dvghv7t8742nk" path="res://Assets/hantu/Jafar Hantuu-1.png - Copy (5).png" id="5_8ac5v"]
+[ext_resource type="Texture2D" uid="uid://5pdudgua6wjb" path="res://Assets/hantu/Jafar Hantuu-1.png - Copy (6).png" id="6_a8no0"]
+[ext_resource type="Texture2D" uid="uid://citn0kme2p5h1" path="res://Assets/hantu/Jafar Hantuu-1.png - Copy (7).png" id="7_xxunj"]
+[ext_resource type="Texture2D" uid="uid://baddfbh8r3rds" path="res://Assets/hantu/Jafar Hantuu-1.png - Copy (8).png" id="8_71tco"]
+[ext_resource type="Texture2D" uid="uid://bdu2n0s3mwdbs" path="res://Assets/hantu/Jafar Hantuu-1.png - Copy (9).png" id="9_ieqfu"]
+[ext_resource type="Texture2D" uid="uid://d210kwc7w5elb" path="res://Assets/hantu/Jafar Hantuu-1.png - Copy.png" id="10_syrwi"]
+[ext_resource type="Texture2D" uid="uid://s2dmj1lfppe0" path="res://Assets/hantu/Jafar Hantuu-1.png.png" id="11_4efdn"]
+[ext_resource type="Texture2D" uid="uid://b5dm8fkpi0adw" path="res://Assets/hantu/Jafar Hantuu-5.png - Copy (2).png" id="12_8ifan"]
+[ext_resource type="Texture2D" uid="uid://bgie3tomemg26" path="res://Assets/hantu/Jafar Hantuu-5.png - Copy (3).png" id="13_yi2en"]
+[ext_resource type="Texture2D" uid="uid://dd4go48i42pac" path="res://Assets/hantu/Jafar Hantuu-5.png - Copy (4).png" id="14_nnt81"]
+[ext_resource type="Texture2D" uid="uid://dtkpu8x2n1xav" path="res://Assets/hantu/Jafar Hantuu-5.png - Copy (5).png" id="15_sga1b"]
+[ext_resource type="Texture2D" uid="uid://cfiq1ghpu2630" path="res://Assets/hantu/Jafar Hantuu-5.png - Copy (6).png" id="16_x638o"]
+[ext_resource type="Texture2D" uid="uid://ddr48u13ddejs" path="res://Assets/hantu/Jafar Hantuu-5.png - Copy (7).png" id="17_760j2"]
+[ext_resource type="Texture2D" uid="uid://bcg60ubjqdbd2" path="res://Assets/hantu/Jafar Hantuu-5.png - Copy (8).png" id="18_odjyw"]
+[ext_resource type="Texture2D" uid="uid://bfv1yoev5a1lo" path="res://Assets/hantu/Jafar Hantuu-5.png - Copy (9).png" id="19_uaos2"]
+[ext_resource type="Texture2D" uid="uid://cc2cs2ov581lv" path="res://Assets/hantu/Jafar Hantuu-5.png - Copy.png" id="20_i5gg8"]
+[ext_resource type="Texture2D" uid="uid://1g04gvv6obof" path="res://Assets/hantu/Jafar Hantuu-5.png.png" id="21_fqt2k"]
+[ext_resource type="Texture2D" uid="uid://qvnd5xaw0kx8" path="res://Assets/hantu/Jafar Hantuu-9.png - Copy (2).png" id="22_vruns"]
+[ext_resource type="Texture2D" uid="uid://ciwnydsw2kqph" path="res://Assets/hantu/Jafar Hantuu-9.png - Copy (3).png" id="23_8ip58"]
+[ext_resource type="Texture2D" uid="uid://bo8ffbirx3iyo" path="res://Assets/hantu/Jafar Hantuu-9.png - Copy (4).png" id="24_5us4v"]
+[ext_resource type="Texture2D" uid="uid://ddd03drnn2y3" path="res://Assets/hantu/Jafar Hantuu-9.png - Copy (5).png" id="25_882s0"]
+[ext_resource type="Texture2D" uid="uid://dbvyuw0pms54h" path="res://Assets/hantu/Jafar Hantuu-9.png - Copy (6).png" id="26_ox2hk"]
+[ext_resource type="Texture2D" uid="uid://bn7tn8byc2hoq" path="res://Assets/hantu/Jafar Hantuu-9.png - Copy (7).png" id="27_1lsop"]
+[ext_resource type="Texture2D" uid="uid://bkg0j51avhffx" path="res://Assets/hantu/Jafar Hantuu-9.png - Copy (8).png" id="28_6h1o4"]
+[ext_resource type="Texture2D" uid="uid://nybqake76ra5" path="res://Assets/hantu/Jafar Hantuu-9.png - Copy (9).png" id="29_q71dn"]
+[ext_resource type="Texture2D" uid="uid://bdtrlqykd086q" path="res://Assets/hantu/Jafar Hantuu-9.png - Copy.png" id="30_4n11w"]
+[ext_resource type="Texture2D" uid="uid://d4kkmsggpugy6" path="res://Assets/hantu/Jafar Hantuu-9.png.png" id="31_85ylg"]
+[ext_resource type="Texture2D" uid="uid://ow3q6jn3ttt3" path="res://Assets/hantu/Jafar Hantuu-13.png - Copy (2).png" id="32_oc2l6"]
+[ext_resource type="Texture2D" uid="uid://c3268wttcrchs" path="res://Assets/hantu/Jafar Hantuu-13.png - Copy (3).png" id="33_5m5l7"]
+[ext_resource type="Texture2D" uid="uid://bi0jc6o3wslt8" path="res://Assets/hantu/Jafar Hantuu-13.png - Copy (4).png" id="34_g13tb"]
+[ext_resource type="Texture2D" uid="uid://ilvi55yx21ie" path="res://Assets/hantu/Jafar Hantuu-13.png - Copy (5).png" id="35_shh2v"]
+[ext_resource type="Texture2D" uid="uid://cxoyv48g3qnlm" path="res://Assets/hantu/Jafar Hantuu-13.png - Copy (6).png" id="36_dkxne"]
+[ext_resource type="Texture2D" uid="uid://babjk1ggd8id3" path="res://Assets/hantu/Jafar Hantuu-13.png - Copy (7).png" id="37_j6465"]
+[ext_resource type="Texture2D" uid="uid://dqy5wok6ykvhx" path="res://Assets/hantu/Jafar Hantuu-13.png - Copy (8).png" id="38_avfv7"]
+[ext_resource type="Texture2D" uid="uid://c2smb85abgvyg" path="res://Assets/hantu/Jafar Hantuu-13.png - Copy (9).png" id="39_3beuf"]
+[ext_resource type="Texture2D" uid="uid://06ot3q6axpes" path="res://Assets/hantu/Jafar Hantuu-13.png - Copy.png" id="40_hi1d3"]
+[ext_resource type="Texture2D" uid="uid://q7yceymfll4" path="res://Assets/hantu/Jafar Hantuu-13.png.png" id="41_det0h"]
+[ext_resource type="Texture2D" uid="uid://du4v1isj57a0c" path="res://Assets/hantu/Jafar Hantuu-17.png - Copy (2).png" id="42_g0pfe"]
+[ext_resource type="Texture2D" uid="uid://75ncjwqlk8bk" path="res://Assets/hantu/Jafar Hantuu-17.png - Copy (3).png" id="43_1qpm1"]
+[ext_resource type="Texture2D" uid="uid://bkijoswijaqsr" path="res://Assets/hantu/Jafar Hantuu-17.png - Copy (4).png" id="44_fj6j1"]
+[ext_resource type="Texture2D" uid="uid://43w6mt656tdy" path="res://Assets/hantu/Jafar Hantuu-17.png - Copy (5).png" id="45_knc83"]
+[ext_resource type="Texture2D" uid="uid://c4fg8o2716h4d" path="res://Assets/hantu/Jafar Hantuu-17.png - Copy (6).png" id="46_w1ysh"]
+[ext_resource type="Texture2D" uid="uid://dtwy7wsapkpfo" path="res://Assets/hantu/Jafar Hantuu-17.png - Copy (7).png" id="47_hdupu"]
+[ext_resource type="Texture2D" uid="uid://bru3ikjnpkj47" path="res://Assets/hantu/Jafar Hantuu-17.png - Copy (8).png" id="48_lxg73"]
+[ext_resource type="Texture2D" uid="uid://c06eat5ugs0lk" path="res://Assets/hantu/Jafar Hantuu-17.png - Copy (9).png" id="49_h0181"]
+[ext_resource type="Texture2D" uid="uid://b6wxfmlcv1wrm" path="res://Assets/hantu/Jafar Hantuu-17.png - Copy.png" id="50_fxrwl"]
+[ext_resource type="Texture2D" uid="uid://ddebwuj3ddfug" path="res://Assets/hantu/Jafar Hantuu-17.png.png" id="51_ak2h2"]
+[ext_resource type="Texture2D" uid="uid://comvnj6ds6h8k" path="res://Assets/hantu/Jafar Hantuu-21.png - Copy (2).png" id="52_mhmw5"]
+[ext_resource type="Texture2D" uid="uid://b0uxotyo8kra4" path="res://Assets/hantu/Jafar Hantuu-21.png - Copy (3).png" id="53_kf3y3"]
+[ext_resource type="Texture2D" uid="uid://dqbdonjng04qk" path="res://Assets/hantu/Jafar Hantuu-21.png - Copy (4).png" id="54_w5b50"]
+[ext_resource type="Texture2D" uid="uid://k03f55vmrfpo" path="res://Assets/hantu/Jafar Hantuu-21.png - Copy (5).png" id="55_uncle"]
+[ext_resource type="Texture2D" uid="uid://dqn2ecffugiof" path="res://Assets/hantu/Jafar Hantuu-21.png - Copy (6).png" id="56_dnl8a"]
+[ext_resource type="Texture2D" uid="uid://bwlv5qnqlu51b" path="res://Assets/hantu/Jafar Hantuu-21.png - Copy (7).png" id="57_ehjls"]
+[ext_resource type="Texture2D" uid="uid://jgc8bd7x53qr" path="res://Assets/hantu/Jafar Hantuu-21.png - Copy (8).png" id="58_q5lxi"]
+[ext_resource type="Texture2D" uid="uid://c2i6ph37ssqf3" path="res://Assets/hantu/Jafar Hantuu-21.png - Copy (9).png" id="59_4r83q"]
+[ext_resource type="Texture2D" uid="uid://ban4lij4223st" path="res://Assets/hantu/Jafar Hantuu-21.png - Copy.png" id="60_6kaah"]
+[ext_resource type="Texture2D" uid="uid://dwxydqotee11b" path="res://Assets/hantu/Jafar Hantuu-21.png.png" id="61_gj5t4"]
+[ext_resource type="Texture2D" uid="uid://7jv2x1hjqspf" path="res://Assets/hantu/Jafar Hantuu-25.png - Copy (2).png" id="62_eooq4"]
+[ext_resource type="Texture2D" uid="uid://ccletk7s33fj3" path="res://Assets/hantu/Jafar Hantuu-25.png - Copy (3).png" id="63_3s3oc"]
+[ext_resource type="Texture2D" uid="uid://dflpkybv0oinh" path="res://Assets/hantu/Jafar Hantuu-25.png - Copy (4).png" id="64_i8cqc"]
+[ext_resource type="Texture2D" uid="uid://bnpol8qkacnbc" path="res://Assets/hantu/Jafar Hantuu-25.png - Copy (5).png" id="65_mk5t5"]
+[ext_resource type="Texture2D" uid="uid://l86iy6df3lbw" path="res://Assets/hantu/Jafar Hantuu-25.png - Copy (6).png" id="66_pkjt2"]
+[ext_resource type="Texture2D" uid="uid://cctbyfj8ib15p" path="res://Assets/hantu/Jafar Hantuu-25.png - Copy (7).png" id="67_yg86n"]
+[ext_resource type="Texture2D" uid="uid://5co1fbkabumh" path="res://Assets/hantu/Jafar Hantuu-25.png - Copy (8).png" id="68_ye5vi"]
+[ext_resource type="Texture2D" uid="uid://cgwyd07agy8ow" path="res://Assets/hantu/Jafar Hantuu-25.png - Copy (9).png" id="69_im5yl"]
+[ext_resource type="Texture2D" uid="uid://dfecpwyb37ohp" path="res://Assets/hantu/Jafar Hantuu-25.png - Copy.png" id="70_4oplf"]
+[ext_resource type="Texture2D" uid="uid://camipp2wt8kpd" path="res://Assets/hantu/Jafar Hantuu-25.png.png" id="71_ltnvw"]
+[ext_resource type="Texture2D" uid="uid://6npbexfol3b0" path="res://Assets/hantu/Jafar Hantuu-29.png - Copy (2).png" id="72_3aibu"]
+[ext_resource type="Texture2D" uid="uid://1t8iraumcnkc" path="res://Assets/hantu/Jafar Hantuu-29.png - Copy (3).png" id="73_47f13"]
+[ext_resource type="Texture2D" uid="uid://ra7t2qx318eu" path="res://Assets/hantu/Jafar Hantuu-29.png - Copy (4).png" id="74_1kpmv"]
+[ext_resource type="Texture2D" uid="uid://chyrks6abjwj" path="res://Assets/hantu/Jafar Hantuu-29.png - Copy (5).png" id="75_ukbth"]
+[ext_resource type="Texture2D" uid="uid://dv86lhllveiuf" path="res://Assets/hantu/Jafar Hantuu-29.png - Copy (6).png" id="76_l78so"]
+[ext_resource type="Texture2D" uid="uid://ce4enbddisrp8" path="res://Assets/hantu/Jafar Hantuu-29.png - Copy (7).png" id="77_vxucg"]
+[ext_resource type="Texture2D" uid="uid://6sf3qkr48lpn" path="res://Assets/hantu/Jafar Hantuu-29.png - Copy (8).png" id="78_ylm5n"]
+[ext_resource type="Texture2D" uid="uid://ds5lobor1rhk5" path="res://Assets/hantu/Jafar Hantuu-29.png - Copy (9).png" id="79_74t7g"]
+[ext_resource type="Texture2D" uid="uid://c2tonpvaom7u0" path="res://Assets/hantu/Jafar Hantuu-29.png - Copy.png" id="80_soedn"]
+[ext_resource type="Texture2D" uid="uid://cpghg0ca3rx3y" path="res://Assets/hantu/Jafar Hantuu-29.png.png" id="81_akhi3"]
+[ext_resource type="Texture2D" uid="uid://c1lnch0tu8riq" path="res://Assets/hantu/Jafar Hantuu-32.png - Copy (2).png" id="82_wvi2o"]
+[ext_resource type="Texture2D" uid="uid://drhldodm0gqot" path="res://Assets/hantu/Jafar Hantuu-32.png - Copy (3).png" id="83_72glx"]
+[ext_resource type="Texture2D" uid="uid://gvpns6rhyeim" path="res://Assets/hantu/Jafar Hantuu-32.png - Copy (4).png" id="84_egm6w"]
+[ext_resource type="Texture2D" uid="uid://bepu05uo3mc2d" path="res://Assets/hantu/Jafar Hantuu-32.png - Copy (5).png" id="85_n8ofi"]
+[ext_resource type="Texture2D" uid="uid://dadubgfxqpaff" path="res://Assets/hantu/Jafar Hantuu-32.png - Copy (6).png" id="86_nbfsu"]
+[ext_resource type="Texture2D" uid="uid://qdkf52yx0lvs" path="res://Assets/hantu/Jafar Hantuu-32.png - Copy (7).png" id="87_24wfd"]
+[ext_resource type="Texture2D" uid="uid://0j2wh45avxtl" path="res://Assets/hantu/Jafar Hantuu-32.png - Copy (8).png" id="88_ch8w8"]
+[ext_resource type="Texture2D" uid="uid://bimxltqo67ync" path="res://Assets/hantu/Jafar Hantuu-32.png - Copy (9).png" id="89_x243s"]
+[ext_resource type="Texture2D" uid="uid://t3jfnk40ndix" path="res://Assets/hantu/Jafar Hantuu-32.png - Copy.png" id="90_v4pjs"]
+[ext_resource type="Texture2D" uid="uid://qf720r11oidf" path="res://Assets/hantu/Jafar Hantuu-32.png.png" id="91_x7dlu"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_eg8ly"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_a7gh5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_a5e21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_m48on")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_8ac5v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_a8no0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xxunj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_71tco")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ieqfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_syrwi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_4efdn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_8ifan")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_yi2en")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_nnt81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_sga1b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_x638o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_760j2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_odjyw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_uaos2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_i5gg8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_fqt2k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_vruns")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_8ip58")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_5us4v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_882s0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_ox2hk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_1lsop")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_6h1o4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_q71dn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_4n11w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_85ylg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_oc2l6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_5m5l7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_g13tb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_shh2v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_dkxne")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_j6465")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_avfv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_3beuf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_hi1d3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_det0h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_g0pfe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_1qpm1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_fj6j1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_knc83")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_w1ysh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_hdupu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_lxg73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_h0181")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_fxrwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_ak2h2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_mhmw5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_kf3y3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_w5b50")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_uncle")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_dnl8a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_ehjls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_q5lxi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_4r83q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_6kaah")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_gj5t4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_eooq4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_3s3oc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_i8cqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_mk5t5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_pkjt2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_yg86n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_ye5vi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_im5yl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_4oplf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_ltnvw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_3aibu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_47f13")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_1kpmv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_ukbth")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_l78so")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_vxucg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_ylm5n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_74t7g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_soedn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_akhi3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_wvi2o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_72glx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_egm6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_n8ofi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_nbfsu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_24wfd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_ch8w8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_x243s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_v4pjs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_x7dlu")
+}],
+"loop": true,
+"name": &"hantu",
+"speed": 50.0
+}]
+
+[node name="Hantu" type="Node2D"]
+script = ExtResource("1_88l64")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+scale = Vector2(0.195, 0.195)
+sprite_frames = SubResource("SpriteFrames_eg8ly")
+animation = &"hantu"
+frame = 33
+frame_progress = 0.46249822
