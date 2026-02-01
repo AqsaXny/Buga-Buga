@@ -31,7 +31,7 @@ func _ready():
 func add_coin(jml: int):
 	are_masks_unlocked = true
 	
-# --- INPUT KEYBOARD ---
+# INPUT KEYBOARD
 func _input(event):
 	if is_dead or not are_masks_unlocked:
 		return
@@ -49,7 +49,6 @@ func _input(event):
 		change_mask(MaskType.HIJAU)
 
 	elif event is InputEventKey and event.pressed and event.keycode == KEY_0:
-		# Jika sedang pakai topeng, lepas topengnya
 		if current_mask != MaskType.NONE:
 			change_mask(MaskType.NONE)
 
